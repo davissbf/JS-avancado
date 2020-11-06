@@ -1,1 +1,4 @@
-alert("Olá Mundo!");
+// 1
+// 2
+// 4
+console.log('EIIIIIIIIIIIIIIIIIIIIIIIII');

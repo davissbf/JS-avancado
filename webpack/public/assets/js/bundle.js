@@ -1,10 +1,2 @@
-/******/ (() => { // webpackBootstrap
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements:  */
-alert("Olá Mundo!");
-/******/ })()
-;
+console.log("EIIIIIIIIIIIIIIIIIIIIIIIII");
 //# sourceMappingURL=bundle.js.map
