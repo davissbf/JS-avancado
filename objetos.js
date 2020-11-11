@@ -1,27 +1,27 @@
-// function criaObjeto(nome, idade, altura){
-//   return { nome, idade, altura };
-// };
+function criaObjeto(nome, idade, altura){
+  return { nome, idade, altura };
+};
 
-// const pessoa1 = criaObjeto('Davi Souza', 21, 1.90); 
-// const pessoa2 = criaObjeto('Ane', 20, 1.60); 
-// const pessoa3 = criaObjeto('fulano', 45, 1.86); 
+const pessoa1 = criaObjeto('Davi Souza', 21, 1.90);
+const pessoa2 = criaObjeto('Ane', 20, 1.60);
+const pessoa3 = criaObjeto('fulano', 45, 1.86);
 
-// console.log(pessoa1.nome,pessoa2.idade, pessoa3);
+console.log(pessoa1.nome,pessoa2.idade, pessoa3);
 
 /**
  * Primitivos (imutáveis) - strings, number, boolean, undefined,
  * null (bigint, symbol) - valores copiados
- * 
+ *
  * Referência (mutável) - array, object, function - Passados por Referência
  */
 
-      
-// let num1 = 2; //O valor "2" está sendo armazenado na memória do nosso computador, no endereço num1 ou 0000xf
-// let num2 = num1; //o valor "2" é copiado do enderço 0000xf para o endereço de num2, por exemplo, 0x000F
 
-// num1 = 6;
+let num1 = 2; //O valor "2" está sendo armazenado na memória do nosso computador, no endereço num1 ou 0000xf
+let num2 = num1; //o valor "2" é copiado do enderço 0000xf para o endereço de num2, por exemplo, 0x000F
 
-// console.log('num2:', num2);
+num1 = 6;
+
+console.log('num2:', num2);
 
 //0000xff
 const a = {
