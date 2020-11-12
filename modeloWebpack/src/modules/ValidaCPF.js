@@ -43,12 +43,3 @@ export default class ValidaCPF {
     return this.novoCPF === this.cpfLimpo;
   }
 }
-
-let validacpf = new ValidaCPF('070.987.720-03');
-// validacpf = new ValidaCPF('999.999.999-99');
-
-if (validacpf.valida()) {
-  console.log('CPF válido');
-} else {
-  console.log('CPF inválido');
-}
