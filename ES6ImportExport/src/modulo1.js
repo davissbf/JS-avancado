@@ -1,11 +1,14 @@
-const nome = "Davi";
-const sobrenome = "Souza";
-const idade = 21;
+export const nome = "Davi";
+export const sobrenome = "Souza";
+export const idade = 21;
 
-function soma(x, y) {
+export function soma(x, y) {
   return x + y;
 }
 
-export default (x, y) => x * y;
-
-export { nome, sobrenome, idade, soma };
+export default class Pessoa{
+  constructor(nome, sobrenome) {
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+  }
+};
