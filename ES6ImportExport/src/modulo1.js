@@ -1,6 +1,6 @@
 const nome = "Davi";
 const sobrenome = "Souza";
-const idade = 30;
+const idade = 21;
 
 function soma(x, y) {
   return x + y;
