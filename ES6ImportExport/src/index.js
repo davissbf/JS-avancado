@@ -1,3 +1,3 @@
-import soma from './modulo1';
+import outra, { nome, sobrenome, idade, soma } from './modulo1';
 
-console.log(soma(5, 5));
+console.log(outra(5, 5));

@@ -1,7 +1,11 @@
-export const nome = "Davi";
-export const sobrenome = "Souza";
-export const idade = 30;
+const nome = "Davi";
+const sobrenome = "Souza";
+const idade = 30;
 
-export default function soma(x, y) {
+function soma(x, y) {
   return x + y;
 }
+
+export default (x, y) => x * y;
+
+export { nome, sobrenome, idade, soma };

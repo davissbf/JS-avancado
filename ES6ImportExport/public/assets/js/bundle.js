@@ -1,2 +1,2 @@
-(()=>{"use strict";console.log(10)})();
+(()=>{"use strict";console.log(25)})();
 //# sourceMappingURL=bundle.js.map
