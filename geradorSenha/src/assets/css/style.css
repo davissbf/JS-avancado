@@ -31,11 +31,19 @@ body {
   margin-bottom: 40px;
 }
 
-.cpf-gerado {
+.senha-gerada {
   font-size: 2em;
   color: var(--primary-color);
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 40px;
-  letter-spacing: 5px;
+  margin: 40px 0;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+button {
+  display: block;
+  margin: 40px 0;
+  font-size: 1em;
 }
