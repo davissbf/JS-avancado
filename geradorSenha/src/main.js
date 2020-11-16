@@ -1,9 +1,4 @@
-import GeraCPF from './modules/GeraCPF';
-
+import formGeraSenha from './modules/formGeraSenha';
 import './assets/css/style.css';
 
-(function() {
-  const gera = new GeraCPF();
-  const cpfGerado = document.querySelector('.cpf-gerado');
-  cpfGerado.innerHTML = gera.geraNovoCpf();
-})();
+formGeraSenha();
