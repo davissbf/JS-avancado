@@ -1,2 +1,5 @@
-const multiplicacao = require('./mod');
-console.log(multiplicacao(2,2));
+const Cachorro = require('./mod');
+
+const rex = new Cachorro('rex');
+rex.latir();
+console.log(rex);
