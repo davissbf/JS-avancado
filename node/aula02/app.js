@@ -1,3 +1,2 @@
-module.exports = function multiplicacao(x, y) {
-  return x * y;
-}
+const multiplicacao = require('./mod');
+console.log(multiplicacao(2,2));
