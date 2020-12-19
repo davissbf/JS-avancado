@@ -9,7 +9,9 @@ server.get('/', (req, res) => {
   </form>`);
 });
 
-server.
+server.post('/', (req, res) => {
+  res.send("formulário recebido!!");
+});
 
 server.listen(3000, () => {
   console.log("Server running!!⚡");
