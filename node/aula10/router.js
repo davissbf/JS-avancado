@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const homeController = require('./src/controller/homeController');
-const homeContato = require('./src/conttoller/contatoController');
+const homeContato = require('./src/controller/contatoController');
 
 router.get('/', homeController.paginaInicial);
 router.post('/', homeController.trataPost);
