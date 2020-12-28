@@ -6,8 +6,8 @@ const path = require('path');
 
 server.use(express.urlencoded({ extended: true }));
 
-server.set('views', path(__dirname, 'src', 'views'));
-server.set('view engine')
+server.set('views', path.resolve(__dirname, 'src', 'views'));
+server.set('view engine', 'ejs');
 
 server.use(router);
 
