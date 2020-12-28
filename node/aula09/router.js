@@ -4,4 +4,4 @@ const homeController = require('./controller/Homecontroller');
 
 router.get('/', homeController.paginaInicial);
 
-
+module.exports = router;
