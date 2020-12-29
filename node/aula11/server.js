@@ -5,6 +5,7 @@ const router = require('./router');
 const path = require('path');
 
 server.use(express.urlencoded({ extended: true }));
+server.use(express.static(path.resolve(__dirname, 'public')));
 
 server.set('views', path.resolve(__dirname, 'src', 'views'));
 server.set('view engine', 'ejs');
