@@ -4,5 +4,6 @@ exports.paginaInicial = (req, res) => {
 };
 
 exports.trataPost = (req, res) => {
-  res.send(`Formlário recebido: ${req.body}`);
+  res.send(req.body);
+  return;
 };
