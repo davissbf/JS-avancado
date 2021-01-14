@@ -1,0 +1,1 @@
+mongodb+srv://daviJS:<password>@cluster0.htkss.mongodb.net/<dbname>?retryWrites=true&w=majority

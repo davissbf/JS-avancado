@@ -15,6 +15,7 @@ const novoValor = array.map(valor => valor * 2);
 console.log(novoValor);
 
 const nome = pessoas.map(obj => console.log(obj.nome));
+console.log(nome);
 
 const chaveNome = pessoas.map(obj => ({idades: obj.idade}));
 console.log(chaveNome);

@@ -1,4 +1,4 @@
-// 1# const array = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+// const array = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
 // const numerosFiltrados = array.filter(valor => valor > 10);
 // console.log(numerosFiltrados);
@@ -22,14 +22,14 @@ const pessoas = [
   { nome: 'Akila', idade: 29 },
 ];
 
-const nomes = pessoas.filter(obj => obj.nome.length >= 5);
+const nomes = pessoas.filter(obj => obj.nome);
 console.log(nomes);
 
-const idades = pessoas.filter(obj => obj.idade > 50);
-console.log(idades);
+// const idades = pessoas.filter(obj => obj.idade > 50);
+// console.log(idades);
 
-const nomesComA = pessoas.filter(obj => {
-  return obj.nome.toLowerCase().endsWith('a');
-});
-console.log(nomesComA);
+// const nomesComA = pessoas.filter(obj => {
+//   return obj.nome.toLowerCase().endsWith('a');
+// });
+// console.log(nomesComA);
 

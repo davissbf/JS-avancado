@@ -1,4 +1,4 @@
-const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+// const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
 const pessoas = [
   { nome: 'Davi', idade: 21 },
@@ -11,15 +11,16 @@ const pessoas = [
   { nome: 'Akila', idade: 29 },
 ];
 
-const total = numeros.reduce(function(acumulador, valor, indice, array) {
-  acumulador += valor;
-  return acumulador;
-}, []);
-
-console.log(total);
-
-
 const maisVelha = pessoas.reduce(function(acumulador, valor) {
   if(acumulador.idade > valor.idade) return acumulador;
 });
 console.log(maisVelha);
+
+// const total = numeros.reduce(function(acumulador, valor, indice, array) {
+//   acumulador += valor;
+//   return acumulador;
+// }, []);
+
+// console.log(total);
+
+
