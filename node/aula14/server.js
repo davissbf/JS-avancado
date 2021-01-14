@@ -4,13 +4,14 @@ const express = require('express');
 const server = express();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.BASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Agora que a conxão ocorreu'))
   .catch(e => console.log(e));
 
 const router = require('./router');
 const path = require('path');
 const meuMiddleware = require('./src/middlewares/middleware');
+const { access } = require('fs');
 
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static(path.resolve(__dirname, 'public')));
