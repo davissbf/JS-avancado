@@ -14,9 +14,16 @@ const flash = require('connect-flash');
 
 const router = require('./router');
 const path = require('path');
-const { middlewareGlobal } = require('./src/middlewares/middleware');
+
+const helmet = require('helmet');
+const csrf = require('csurf');
+
+const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/middlewares/middleware');
 const { access } = require('fs');
 
+server.use(helmet());
+
+// server.use(json());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static(path.resolve(__dirname, 'public')));
 
@@ -36,7 +43,10 @@ const sessionOptions = session({
 server.use(sessionOptions);
 server.use(flash());
 
+server.use(csrf());
 server.use(middlewareGlobal);
+server.use(checkCsrfError);
+server.use(csrfMiddleware);
 server.use(router);
 
 server.listen(3000, () => {
