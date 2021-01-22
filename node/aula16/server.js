@@ -14,7 +14,7 @@ const flash = require('connect-flash');
 
 const router = require('./router');
 const path = require('path');
-const meuMiddleware = require('./src/middlewares/middleware');
+const { middlewareGlobal } = require('./src/middlewares/middleware');
 const { access } = require('fs');
 
 server.use(express.urlencoded({ extended: true }));
@@ -36,7 +36,7 @@ const sessionOptions = session({
 server.use(sessionOptions);
 server.use(flash());
 
-server.use(meuMiddleware);
+server.use(middlewareGlobal);
 server.use(router);
 
 server.listen(3000, () => {
