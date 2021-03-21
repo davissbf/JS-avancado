@@ -4,32 +4,43 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-2"></div>
-
     <div class="col-lg-8 my-3">
-      <h1 class="display-1 text-center">Login</h1>
-      <p class="text-center lead">Faça seu login ou cadastro ;)</p>
-
-      <div class="row">
-        <div class="col my-3">
-          <div class="alert alert-danger">Um erro qualquer</div>
+      <h1 class="display-1 text-center">Cadastro ou Login</h1>
+      <p class="text-center lead">Faça seu cadastro ou login ;)</p>
+      <div class="row justify-content-between fs-4 my-5">
+        <div class="col-4">
+          Faça seu cadastro
+          <form action="login/register" method="POST">
+            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+            <div class="mb-3 my-3 fs-5">
+              <label for="exampleInputEmail1" class="form-label">Seu e-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            </div>
+            <div class="mb-3 fs-5">
+              <label for="exampleInputPassword1" class="form-label">Sua senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Criar conta</button>
+          </form>
+        </div>
+        <div class="col-4">
+          Faça seu login
+          <form action="login/login" method="POST">
+            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+            <div class="mb-3 my-3 fs-5">
+              <label for="exampleInputEmail1" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            </div>
+            <div class="mb-3 fs-5">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </form>
         </div>
       </div>
-
-      <div class="responsive-table">
-        <table class="table my-3">
-          <tr>
-            <td>Davi</td>
-            <td>Bonfim</td>
-            <td>13213265465</td>
-            <td>davissbf@gmail.com</td>
-          </tr>
-        </table>
-      </div>
-
     </div>
-
     <div class="col-lg-2"></div>
-
   </div>
 </div>
 
