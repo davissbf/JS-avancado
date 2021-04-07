@@ -4,8 +4,8 @@ class Pessoa {
   }
 }
 
-const nome = 'Luiz';
-const sobrenome = 'Miranda';
+const nome = 'Davi';
+const sobrenome = 'Souza';
 
 exports.nome = nome;
 module.exports.sobrenome = sobrenome;
