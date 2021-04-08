@@ -11,12 +11,13 @@ const pessoas = [
   { nome: 'Akila', idade: 29 },
 ];
 
-const novoValor = array.map(valor => valor * 2);
-console.log(novoValor);
+const novosNumeros = numeros.map(num => num * 2);
+console.log(novosNumeros);
 
-const nome = pessoas.map(obj => console.log(obj.nome));
-console.log(nome);
+const novasPessoas = pessoas.map(obj => console.log(obj.nome));
+console.log(novasPessoas);
 
+/*
 const chaveNome = pessoas.map(obj => ({idades: obj.idade}));
 console.log(chaveNome);
 
@@ -29,10 +30,7 @@ const id = pessoas.map((obj, indice) => {
 console.log(pessoas);
 console.log(id);
 
-
-
-
 const maisVelha = pessoas.reduce(function(acumulador, valor) {
   if(acumulador.idade > valor.idade) return acumulador;
 });
-console.log(maisVelha);
+console.log(maisVelha);*/
